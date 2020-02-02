@@ -25,6 +25,7 @@
 		46E2E02A23C123160064BFC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2E02923C123160064BFC9 /* User.swift */; };
 		4B57D87923E75058006ED254 /* FollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57D87823E75058006ED254 /* FollowersCell.swift */; };
 		4B57D87B23E75109006ED254 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57D87A23E75109006ED254 /* GFAvatarImageView.swift */; };
+		4B57D87D23E77261006ED254 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57D87C23E77261006ED254 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		46E2E02923C123160064BFC9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4B57D87823E75058006ED254 /* FollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersCell.swift; sourceTree = "<group>"; };
 		4B57D87A23E75109006ED254 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		4B57D87C23E77261006ED254 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				46344BB123C6A22400ADB3A7 /* GFError.swift */,
+				4B57D87C23E77261006ED254 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				463688A923BAC82600627CAE /* AppDelegate.swift in Sources */,
 				4665BB6723BC3B1F0018D405 /* GFButton.swift in Sources */,
 				46E2E01F23C1137A0064BFC9 /* UIViewController+Ext.swift in Sources */,
+				4B57D87D23E77261006ED254 /* UIHelper.swift in Sources */,
 				4B57D87B23E75109006ED254 /* GFAvatarImageView.swift in Sources */,
 				4665BB6B23BE8A2D0018D405 /* FollowerListVC.swift in Sources */,
 				46565DF123C109CD009C6837 /* GFAlertVC.swift in Sources */,
