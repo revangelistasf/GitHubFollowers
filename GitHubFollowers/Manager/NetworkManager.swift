@@ -6,12 +6,13 @@
 //  Copyright © 2020 Roberto Evangelista. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager {
     
     static let shared = NetworkManager()
-    let baseURL = "https://api.github.com/users/"
+    private let baseURL = "https://api.github.com/users/"
+    let cache = NSCache<NSString, UIImage>()
     let resultsPerPage = 100
     
     private init () {}

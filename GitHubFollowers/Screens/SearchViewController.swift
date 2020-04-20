@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchVC: UIViewController {
+class SearchViewController: UIViewController {
     
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
@@ -43,7 +43,7 @@ class SearchVC: UIViewController {
             return
         }
         
-        let followerListVC = FollowerListVC()
+        let followerListVC = FollowerListViewController()
         followerListVC.title = usernameTextField.text
         followerListVC.username = usernameTextField.text
         navigationController?.pushViewController(followerListVC, animated: true)
@@ -86,7 +86,7 @@ class SearchVC: UIViewController {
     }
 }
 
-extension SearchVC: UITextFieldDelegate {
+extension SearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         pushFollowerListVC()
         return true
