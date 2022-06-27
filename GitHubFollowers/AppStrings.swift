@@ -9,9 +9,14 @@ import Foundation
 
 enum AppStrings {
     
-    // MARK: - GFTextField
+    // MARK: - Components
     internal enum GFTextField {
         static let placeholderText = "Enter a username"
+    }
+    
+    // MARK: - ViewControllers
+    internal enum SearchVC {
+        static let buttonTitle = "Get Followers"
     }
     
 }
