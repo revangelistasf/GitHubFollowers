@@ -112,10 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				46FAB855287B86C700F66B93 /* Core Extensions */,
+				46FAB85C287B8A0900F66B93 /* Labels */,
 				46E2672428690C04004BBD43 /* GFButton.swift */,
 				46E2672628690E12004BBD43 /* GFTextField.swift */,
-				46FAB858287B88AC00F66B93 /* GFTitleLabel.swift */,
-				46FAB85A287B896900F66B93 /* GFBodyLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -126,6 +125,15 @@
 				46FAB856287B86D500F66B93 /* String+Ext.swift */,
 			);
 			path = "Core Extensions";
+			sourceTree = "<group>";
+		};
+		46FAB85C287B8A0900F66B93 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				46FAB858287B88AC00F66B93 /* GFTitleLabel.swift */,
+				46FAB85A287B896900F66B93 /* GFBodyLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
