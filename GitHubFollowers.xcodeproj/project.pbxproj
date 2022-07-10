@@ -70,7 +70,6 @@
 		46A98E34285B68DC00483F81 /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				46FAB854287B5FB500F66B93 /* Components */,
 				46FAB851287B5F5700F66B93 /* Configurations */,
 				46FAB853287B5FA400F66B93 /* Modules */,
 				46FAB852287B5F6B00F66B93 /* Resources */,
@@ -97,6 +96,8 @@
 			children = (
 				46E2672828690F30004BBD43 /* AppStrings.swift */,
 				46A98E3E285B68DF00483F81 /* Assets.xcassets */,
+				46FAB854287B5FB500F66B93 /* Components */,
+				46FAB855287B86C700F66B93 /* Extensions */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -111,7 +112,7 @@
 		46FAB854287B5FB500F66B93 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				46FAB855287B86C700F66B93 /* Core Extensions */,
+				46FAB85D287B8A4700F66B93 /* Alerts */,
 				46FAB85C287B8A0900F66B93 /* Labels */,
 				46E2672428690C04004BBD43 /* GFButton.swift */,
 				46E2672628690E12004BBD43 /* GFTextField.swift */,
@@ -119,12 +120,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		46FAB855287B86C700F66B93 /* Core Extensions */ = {
+		46FAB855287B86C700F66B93 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				46FAB856287B86D500F66B93 /* String+Ext.swift */,
 			);
-			path = "Core Extensions";
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		46FAB85C287B8A0900F66B93 /* Labels */ = {
@@ -134,6 +135,13 @@
 				46FAB85A287B896900F66B93 /* GFBodyLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		46FAB85D287B8A4700F66B93 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
