@@ -34,9 +34,9 @@ class GFTextField: UITextField {
         
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
+        returnKeyType = .search
         
         placeholder = AppStrings.GFTextField.placeholderText
-        
         translatesAutoresizingMaskIntoConstraints = false
     }
     
