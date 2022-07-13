@@ -22,7 +22,7 @@ final class FollowerListViewController: UIViewController {
                 print("Followers Count: \(followers.count)")
                 print(followers)
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Error", message: error.rawValue, buttonTitle: "Ok")
+                self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
