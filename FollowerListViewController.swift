@@ -9,16 +9,23 @@ import UIKit
 
 final class FollowerListViewController: UIViewController {
     
+    enum Section {
+        case main
+    }
+    
     // MARK: - Propeties
     let padding: CGFloat = 12
     var username: String!
+    var followers: [Follower] = []
     var collectionView: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
         getFlollowers()
+        configureDataSource()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,10 +47,8 @@ final class FollowerListViewController: UIViewController {
     private func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
         view.addSubview(collectionView)
-        collectionView.backgroundColor = .systemPink
-        collectionView.register(
-            FollowerCollectionViewCell.self,
-            forCellWithReuseIdentifier: FollowerCollectionViewCell.reusableID)
+        collectionView.backgroundColor = .systemBackground
+        collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reusableID)
     }
     
     private func cellWidth() -> CGFloat {
@@ -64,14 +69,32 @@ final class FollowerListViewController: UIViewController {
     }
     
     private func getFlollowers() {
-        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+        NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .success(let followers):
-                print("Followers Count: \(followers.count)")
-                print(followers)
+                self.followers = followers
+                self.updateCollectionViewData()
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
             }
         }
+    }
+    
+    private func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource(
+            collectionView: collectionView, cellProvider: { collectionView, indexPath, follower in
+                let cell = collectionView.dequeueReusableCell(
+                    withReuseIdentifier: FollowerCell.reusableID, for: indexPath) as! FollowerCell
+                cell.set(follower: follower)
+                return cell
+        })
+    }
+    
+    private func updateCollectionViewData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(followers)
+        dataSource.apply(snapshot, animatingDifferences: true)
     }
 }
