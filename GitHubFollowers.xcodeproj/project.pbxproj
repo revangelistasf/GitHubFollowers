@@ -84,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				46A98E34285B68DC00483F81 /* GitHubFollowers */,
+				46A98E4B285CDD9200483F81 /* FavoritesListViewController.swift */,
+				46FAB84F287B5F3100F66B93 /* FollowerListViewController.swift */,
+				46A98E49285CDCF000483F81 /* SearchViewController.swift */,
 				46A98E33285B68DC00483F81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,14 +102,13 @@
 		46A98E34285B68DC00483F81 /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				46FAB854287B5FB500F66B93 /* Components */,
+				46FAB855287B86C700F66B93 /* Extensions */,
 				469CA20C287E238E008C713A /* Managers */,
 				469CA207287E208D008C713A /* Model */,
 				46FAB853287B5FA400F66B93 /* Modules */,
 				46FAB852287B5F6B00F66B93 /* Resources */,
 				46FAB851287B5F5700F66B93 /* Support */,
-				46A98E4B285CDD9200483F81 /* FavoritesListViewController.swift */,
-				46FAB84F287B5F3100F66B93 /* FollowerListViewController.swift */,
-				46A98E49285CDCF000483F81 /* SearchViewController.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -127,8 +129,6 @@
 			children = (
 				46E2672828690F30004BBD43 /* AppStrings.swift */,
 				46A98E3E285B68DF00483F81 /* Assets.xcassets */,
-				46FAB854287B5FB500F66B93 /* Components */,
-				46FAB855287B86C700F66B93 /* Extensions */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
