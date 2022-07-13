@@ -13,6 +13,7 @@
 		469CA210287E30A5008C713A /* Error+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CA20F287E30A5008C713A /* Error+Ext.swift */; };
 		46A2C360287F59D700D00A6E /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C35F287F59D700D00A6E /* FollowerCell.swift */; };
 		46A2C366287F5A5A00D00A6E /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C365287F5A5A00D00A6E /* GFAvatarImageView.swift */; };
+		46A2C368287F696F00D00A6E /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C367287F696F00D00A6E /* UIHelper.swift */; };
 		46A98E36285B68DC00483F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A98E35285B68DC00483F81 /* AppDelegate.swift */; };
 		46A98E38285B68DC00483F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A98E37285B68DC00483F81 /* SceneDelegate.swift */; };
 		46A98E3F285B68DF00483F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A98E3E285B68DF00483F81 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		469CA20F287E30A5008C713A /* Error+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Ext.swift"; sourceTree = "<group>"; };
 		46A2C35F287F59D700D00A6E /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		46A2C365287F5A5A00D00A6E /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		46A2C367287F696F00D00A6E /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		46A98E32285B68DC00483F81 /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A98E35285B68DC00483F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A98E37285B68DC00483F81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,8 @@
 			children = (
 				46FAB854287B5FB500F66B93 /* Components */,
 				46FAB855287B86C700F66B93 /* Extensions */,
+				469CA20C287E238E008C713A /* Managers */,
+				46A2C367287F696F00D00A6E /* UIHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -148,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				46A2C35D287F585100D00A6E /* Helpers */,
-				469CA20C287E238E008C713A /* Managers */,
 				469CA207287E208D008C713A /* Model */,
 				46FAB853287B5FA400F66B93 /* Modules */,
 				46FAB852287B5F6B00F66B93 /* Resources */,
@@ -297,6 +300,7 @@
 				46FAB857287B86D500F66B93 /* String+Ext.swift in Sources */,
 				469CA210287E30A5008C713A /* Error+Ext.swift in Sources */,
 				46A2C366287F5A5A00D00A6E /* GFAvatarImageView.swift in Sources */,
+				46A2C368287F696F00D00A6E /* UIHelper.swift in Sources */,
 				469CA209287E20A4008C713A /* Follower.swift in Sources */,
 				46FAB862287B974100F66B93 /* UIViewController+Ext.swift in Sources */,
 				46E2672728690E12004BBD43 /* GFTextField.swift in Sources */,

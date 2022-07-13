@@ -8,13 +8,9 @@
 import UIKit
 
 final class FollowerListViewController: UIViewController {
-    
-    enum Section {
-        case main
-    }
+    enum Section { case main }
     
     // MARK: - Propeties
-    let padding: CGFloat = 12
     var username: String!
     var followers: [Follower] = []
     var collectionView: UICollectionView!
@@ -45,27 +41,11 @@ final class FollowerListViewController: UIViewController {
     }
     
     private func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
+        collectionView = UICollectionView(
+            frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reusableID)
-    }
-    
-    private func cellWidth() -> CGFloat {
-        let viewWidth = view.bounds.width
-        let spacing: CGFloat = 10
-        let numberOfColumns: CGFloat = 3
-        let availableWidth = viewWidth - (padding * 2) - (spacing * 2)
-        return availableWidth / numberOfColumns
-    }
-    
-    private func createThreeColumnFlowLayout() -> UICollectionViewFlowLayout {
-        let cellWidth = cellWidth()
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: cellWidth, height: cellWidth + 40)
-        
-        return flowLayout
     }
     
     private func getFlollowers() {
