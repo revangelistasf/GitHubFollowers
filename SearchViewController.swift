@@ -22,6 +22,9 @@ final class SearchViewController: UIViewController {
         super.viewDidLoad()
         configureView()
         createDismissKeyboardTapGesture()
+        
+        // TODO: Just for tests, remove it later
+        usernameTextField.text = "revangelistasf"
     }
     
     override func viewWillAppear(_ animated: Bool) {
